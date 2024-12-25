@@ -1,38 +1,531 @@
-.App {
+/* src/App.css */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  
+  .container {
+    padding-top: 20px;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  /* src/App.css */
+body {
+  background-color: #f8f9fa; /* צבע הרקע הכללי של הדף */
+}
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* src/App.css */
+.card-title {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-text {
+  color: #6c757d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* src/App.css */
+.form-label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.form-label svg {
+  margin-right: 0.5rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+button[as="label"] {
+  cursor: pointer;
+}
+
+/* src/App.css */
+.form-label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.form-label svg {
+  margin-right: 0.5rem;
+}
+
+button[as="label"] {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* src/App.css */
+.form-label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.form-label svg {
+  margin-right: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+}
+
+div.mt-4 {
+  margin-top: 2rem;
+}
+
+/* src/App.css */
+.App {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.navbar-light .navbar-brand, .navbar-light .nav-link, .navbar-light .form-control, .navbar-light .btn-outline-success, .navbar-light .btn-outline-primary {
+  color: #000000;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .nav-link, .navbar-dark .form-control, .navbar-dark .btn-outline-success, .navbar-dark .btn-outline-primary {
+  color: #ffffff;
+}
+
+/* src/App.css */
+.card-body {
+  text-align: center;
+}
+
+.card-body svg {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card-body svg:hover {
+  transform: scale(1.1);
+}
+
+.row .fa-info-circle {
+  margin-bottom: 20px;
+}
+
+.animate__animated {
+  animation-duration: 1s;
+}
+
+#about-page {
+  background-color: #f8f9fa;
+}
+
+#about-page h1,
+#about-page .lead {
+  color: #343a40;
+}
+
+#about-page .btn-primary,
+#about-page .btn-light {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-full {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.login-page h1,
+.login-page .lead {
+  color: #343a40;
+}
+
+.login-page .btn-primary {
+  margin-top: 10px;
+}
+
+.login-page .btn-google {
+  background-color: #db4437;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-page .btn-facebook {
+  background-color: #3b5998;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-page .btn-google:hover,
+.login-page .btn-facebook:hover {
+  opacity: 0.9;
 }
+
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-full {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.login-page h1,
+.login-page .lead {
+  color: #343a40;
+}
+
+.login-page .btn-primary {
+  margin-top: 10px;
+}
+
+.login-page .btn-google {
+  background-color: #db4437;
+  color: white;
+}
+
+.login-page .btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.login-page .btn-google:hover,
+.login-page .btn-facebook:hover {
+  opacity: 0.9;
+}
+
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  flex: 1;
+}
+
+.container-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container-full {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.login-page .container-full {
+  align-items: center;
+}
+
+.login-page h1,
+.login-page .lead {
+  color: #343a40;
+}
+
+body.dark-mode .login-page h1,
+body.dark-mode .login-page .lead {
+  color: #fff;
+}
+
+.login-page .btn-primary {
+  margin-top: 10px;
+}
+
+.login-page .btn-google {
+  background-color: #db4437;
+  color: white;
+}
+
+.login-page .btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.login-page .btn-google:hover,
+.login-page .btn-facebook:hover {
+  opacity: 0.9;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  flex: 1;
+}
+
+.container-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-dark,
+.darkMode {
+  background-color: #343a40;
+  color: white;
+}
+
+.text-light {
+  color: white !important;
+}
+
+.text-dark {
+  color: black;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.container-full h1,
+.container-full .lead,
+.container-full .card-title,
+.container-full .card-text {
+  color: #343a40;
+}
+
+.login-page .container-full {
+  align-items: center;
+}
+
+.login-page h1,
+.login-page .lead {
+  color: #343a40;
+}
+
+.login-page .btn-primary {
+  margin-top: 10px;
+}
+
+.login-page .btn-google {
+  background-color: #db4437;
+  color: white;
+}
+
+.login-page .btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.login-page .btn-google:hover,
+.login-page .btn-facebook:hover {
+  opacity: 0.9;
+}
+
+/* src/App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  flex: 1;
+}
+
+.container-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+  color: white;
+}
+
+.text-light {
+  color: white !important;
+}
+
+.text-dark {
+  color: black;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.darkMode {
+  background-color: #343a40;
+  color: white;
+}
+
+.darkMode h1,
+.darkMode .lead,
+.darkMode .card-title,
+.darkMode .card-text {
+  color: white !important;
+}
+
+.business-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
